@@ -34,7 +34,7 @@ function seleccionarOperacion(op) {
     reiniciarPantalla = true;
 }
 
-// función para realizar el calculo segun la operación seleccionada
+// función para realizar el calculo para la operación seleccionada
 function calcular() {
     if (operacionActual === null || reiniciarPantalla) return;
     
@@ -61,7 +61,7 @@ function calcular() {
             break;
     }
 
-    // redondear para evitar decimales largos
+    // redondear para evitar decimales tan largos
     valorPantalla = Math.round(resultado * 10000) / 10000;
     valorPantalla = valorPantalla.toString();
     operacionActual = null;
@@ -77,7 +77,7 @@ function limpiar() {
     actualizarPantalla();
 }
 
-// función para borrar el ultimo caracter ingresado 
+// funcion para borrar el ultimo caracter ingresado 
 function borrarUno() {
     if (valorPantalla.length === 1) {
         valorPantalla = "0";
