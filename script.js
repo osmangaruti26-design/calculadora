@@ -87,7 +87,7 @@ function borrarUno() {
     actualizarPantalla();
 }
 
-// soporte para teclado numerico del computador
+// parte para teclado numerico de la computadora
 document.addEventListener("keydown", function(event) {
     if (event.key >= "0" && event.key <= "9") {
         agregarNumero(event.key);
