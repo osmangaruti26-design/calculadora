@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Web - Osman Garuti</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Calculadora Web</h1>
+        <p></p>
+    </header>
+
+<main class="contenedor-principal">
+ <section class="seccion-calculadora">
+<div class="calculadora">
+<div class="pantalla" id="pantalla">0</div>
+                
+    <div class="teclado">
+        <button class="btn btn-funcion" onclick="limpiar()">C</button>
+        <button class="btn btn-funcion" onclick="borrarUno()">⌫</button>
+        <button class="btn btn-operacion" onclick="seleccionarOperacion('/')">÷</button>
+        <button class="btn btn-operacion" onclick="seleccionarOperacion('*')">×</button>
+
+        <button class="btn" onclick="agregarNumero('7')">7</button>
+        <button class="btn" onclick="agregarNumero('8')">8</button>
+        <button class="btn" onclick="agregarNumero('9')">9</button>
+        <button class="btn btn-operacion" onclick="seleccionarOperacion('-')">-</button>
+
+        <button class="btn" onclick="agregarNumero('4')">4</button>
+        <button class="btn" onclick="agregarNumero('5')">5</button>
+        <button class="btn" onclick="agregarNumero('6')">6</button>
+        <button class="btn btn-operacion" onclick="seleccionarOperacion('+')">+</button>
+
+        <button class="btn" onclick="agregarNumero('1')">1</button>
+        <button class="btn" onclick="agregarNumero('2')">2</button>
+        <button class="btn" onclick="agregarNumero('3')">3</button>
+            <button class="btn btn-igual" onclick="calcular()">=</button>
+
+            <button class="btn btn-cero" onclick="agregarNumero('0')">0</button>
+            <button class="btn" onclick="agregarNumero('.')">.</button>
+        </div>
+    </div>
+</section>
+
+        <aside class="informacion">
+            <h2></h2>
+            <img src="img/calculadora.jpg" alt="Foto de perfil u operador" class="imagen-proyecto">
+            <p>Calculadora funcional desarrollada para operaciones básicas.</p>
+            <a href="https://github.com/Osman2604" target="_blank" class="enlace-github">Mi Perfil en GitHub</a>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Osman Garuti</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
